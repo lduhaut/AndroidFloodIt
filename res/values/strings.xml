@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FloodIt</string>
+    <string name="victoire">Félicitations, vous avez gagné en %1$s coups</string>
+    <string name="titreVictoire">Vous avez gagné !</string>
+    <string name="enterYourName">Entrez votre nom :</string>
+    <string name="valider">Valider</string>
+    <string name="nbLignes">Nombre de lignes</string>
+    <string name="nbColonnes">Nombre de colonnes</string>
+    <string name="difficulte">Difficulté :</string>
+    <string name="couleurs">Couleurs :</string>
+    <string name="diff_simple">Simple : 5 x 5</string>
+    <string name="diff_moyen">Moyen : 15 x 15</string>
+    <string name="diff_difficile">Difficile : 30 x 30</string>
+    <string name="diff_tres_difficile">Très difficile : 50 x 50</string>
+    <string name="diff_master">Master : 100 x 100</string>
+    <string name="diff_perso">Personnalisé : </string>
+    <string name="menu_new">Nouvelle partie</string>
+    <string name="menu_prefs">Préférences</string>
+    <string name="menu_scores">Scores</string>
+    <string name="choisirCouleur">Choisissez une couleur</string>
+    <string name="name">Nom : </string>
+</resources>

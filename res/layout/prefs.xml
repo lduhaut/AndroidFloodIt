@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="0px"
+		android:layout_weight="1"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp">
+	
+		<LinearLayout 
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+			
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center_horizontal"
+				>
+				<TextView android:text="@string/name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+				<EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/prefs.name"
+    				android:layout_margin="3dp" android:maxLength="30"/>
+			</LinearLayout>
+			
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/difficulte" android:id="@+id/textView3"></TextView>
+			
+			<RadioGroup android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/diffRadioGroup">
+				<RadioButton android:id="@+id/radioFacile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/diff_simple" android:layout_marginLeft="20dp"></RadioButton>
+				<RadioButton android:id="@+id/radioMoyen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/diff_moyen" android:layout_marginLeft="20dp"></RadioButton>
+				<RadioButton android:id="@+id/radioDiff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/diff_difficile" android:layout_marginLeft="20dp"></RadioButton>
+				<RadioButton android:layout_marginLeft="20dp" android:id="@+id/radioTresDiff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/diff_tres_difficile"></RadioButton>
+				<RadioButton android:layout_marginLeft="20dp" android:id="@+id/radioMaster" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/diff_master"></RadioButton>
+				<RadioButton android:id="@+id/radioDiffPerso" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:text="@string/diff_perso"></RadioButton>
+			</RadioGroup>
+			<!-- Pas réussi à intégrer le radio button perso dans le linear layout pour tout avoir sur une ligne ... -->
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center_horizontal"
+				>
+				<EditText android:numeric="integer" android:maxLength="3" android:textSize="14dp" 
+					android:layout_width="50dp" android:id="@+id/prefsNbRows" android:layout_height="wrap_content" android:lines="1"></EditText>
+				<TextView android:text=" x " android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+				<EditText android:numeric="integer" android:maxLength="3" android:textSize="14dp" 
+					android:layout_width="50dp" android:id="@+id/prefsNbCols" android:layout_height="wrap_content" android:lines="1"></EditText>
+			</LinearLayout>
+			
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/couleurs"></TextView>
+			
+			<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/controles" android:gravity="center" android:layout_margin="5dp">
+			    <Button android:id="@+id/prefsBtn0" android:text="" android:width="40dp" android:height="40dp" 
+			    	android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+			    	android:onClick="changeCouleur"/>
+			    <Button android:id="@+id/prefsBtn1" android:text="" android:width="40dp" android:height="40dp" 
+			    	android:layout_height="wrap_content" android:layout_width="wrap_content" 
+			    	android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+			    	android:onClick="changeCouleur"/>
+			    <Button android:id="@+id/prefsBtn2" android:text="" android:width="40dp" android:height="40dp" 
+			    	android:layout_height="wrap_content" android:layout_width="wrap_content" 
+			    	android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+			    	android:onClick="changeCouleur"/>
+			</LinearLayout>
+			<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/controles" android:gravity="center" android:layout_margin="5dp">
+			    <Button android:id="@+id/prefsBtn3" android:text="" android:width="40dp" android:height="40dp" 
+			    	android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+			    	android:onClick="changeCouleur"/>
+			    <Button android:id="@+id/prefsBtn4" android:text="" android:width="40dp" android:height="40dp" 
+			    	android:layout_height="wrap_content" android:layout_width="wrap_content" 
+			    	android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+			    	android:onClick="changeCouleur"/>
+			    <Button android:id="@+id/prefsBtn5" android:text="" android:width="40dp" android:height="40dp" 
+			    	android:layout_height="wrap_content" android:layout_width="wrap_content" 
+			    	android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+			    	android:onClick="changeCouleur"/>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+	
+	<Button
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="5dp" android:id="@+id/btnValiderPrefs" android:text="@string/valider"/>
+		
+</LinearLayout>

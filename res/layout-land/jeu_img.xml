@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    >
+	<LinearLayout android:layout_height="match_parent" 
+		android:orientation="vertical" android:id="@+id/controles" android:gravity="center" android:layout_width="wrap_content">
+	    <Button android:id="@+id/btnRouge" android:text="" android:width="40dp" android:height="40dp" 
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content" 
+	    	android:layout_marginTop="20dp" android:layout_marginBottom="20dp" 
+	    	android:layout_marginRight="10dp" android:layout_marginLeft="10dp"
+	    	android:onClick="changeCouleur"
+	    	android:padding="5dip"/>
+	    <Button android:id="@+id/btnVert" android:text="" android:width="40dp" android:height="40dp" 
+	    	android:layout_height="wrap_content" android:layout_width="wrap_content" 
+	    	android:layout_marginTop="20dp" android:layout_marginBottom="20dp" 
+	    	android:layout_marginRight="10dp" android:layout_marginLeft="10dp"
+	    	android:onClick="changeCouleur"
+	    	android:padding="5dip"/>
+	    <Button android:id="@+id/btnBleu" android:text="" android:width="40dp" android:height="40dp" 
+	    	android:layout_height="wrap_content" android:layout_width="wrap_content" 
+	    	android:layout_marginTop="20dp" android:layout_marginBottom="20dp" 
+	    	android:layout_marginRight="10dp" android:layout_marginLeft="10dp"
+	    	android:onClick="changeCouleur"
+	    	android:padding="5dip"/>
+	</LinearLayout>
+	
+	<fr.ldu.android.floodit.image.view.FloodItImageView android:layout_width="0px" android:id="@+id/imageView"
+		android:layout_height="match_parent" android:layout_weight="1" android:layout_gravity="center" android:gravity="center"/>
+	
+	
+	<LinearLayout android:layout_height="match_parent"
+		android:orientation="vertical" android:id="@+id/controles" android:gravity="center" android:layout_width="wrap_content">
+	    <Button android:id="@+id/btnYellow" android:text="" android:width="40dp" android:height="40dp" 
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content" 
+	    	android:layout_marginTop="20dp" android:layout_marginBottom="20dp" 
+	    	android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+	    	android:onClick="changeCouleur"
+	    	android:padding="5dip"/>
+	    <Button android:id="@+id/btnCyan" android:text="" android:width="40dp" android:height="40dp" 
+	    	android:layout_height="wrap_content" android:layout_width="wrap_content" 
+	    	android:layout_marginTop="20dp" android:layout_marginBottom="20dp" 
+	    	android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+	    	android:onClick="changeCouleur"
+	    	android:padding="5dip"/>
+	    <Button android:id="@+id/btnPurple" android:text="" android:width="40dp" android:height="40dp" 
+	    	android:layout_height="wrap_content" android:layout_width="wrap_content" 
+	    	android:layout_marginTop="20dp" android:layout_marginBottom="20dp" 
+	    	android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+	    	android:onClick="changeCouleur"
+	    	android:padding="5dip"/>
+	</LinearLayout>
+		
+</LinearLayout>

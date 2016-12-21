@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:id="@+id/victoire.texte"
+    	android:layout_marginBottom="10dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enterYourName" android:gravity="center" />
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/victoire.name"
+    	android:layout_margin="3dp" android:maxLength="30"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/valider" android:gravity="center" android:id="@+id/victoire.btnValider" android:layout_gravity="center"
+    	android:layout_margin="3dp"/>
+	
+</LinearLayout>
